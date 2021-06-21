@@ -1,0 +1,103 @@
+/* 
+CSS for just the education page
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:regular,black&display=swap');
+
+/* Prevents margin collapsing in Safari - 
+must be applied to all elements for some reason */
+
+/*
+    However, this is also the reason the hamburger menu is going wonky...
+*/
+* {
+    overflow: auto;
+}
+
+/* Font color and style for entire page */
+body {
+    color: #393939;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Main container */
+#content {
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    background-color: #adadad;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* "Education" title */
+h1 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* Container with general education summary at top */
+#overview {
+    margin: 30px auto 0 auto;
+    width: 80%;
+}
+
+/* Sets all margins for overview components */
+h2, h3 {
+    margin: 0;
+}
+
+/* Components with this class identifier are spaced out accordingly */
+.spacing {
+    margin-top: 10px;
+}
+
+/* Space out "Course History" away from other overview components */
+#course_history {
+    margin-top: 40px;
+}
+
+/* Space out top semester table from "Course History" */
+#most_recent_semester {
+    margin-top: 10px;
+}
+
+/* Each individual table (semester) of grades*/
+.semester {
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* The textual name/title for each table */
+.semester-name {
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3px;
+    border-right: thin solid;
+    border-left: thin solid;
+    border-top: thin solid;
+}
+
+/* Make table take up whole page */
+table {
+    width: 100%;
+}
+
+/* Put borders around entire table */
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+/* Indent in the course names in their cell */
+.indent {
+    padding-left: 5px;
+}
+
+/* Center align credit/grades in their cells */
+.center {
+    text-align: center;
+}

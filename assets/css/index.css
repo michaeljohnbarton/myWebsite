@@ -1,0 +1,126 @@
+/*
+CSS for just the index page
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:regular,black&display=swap');
+
+h1, p {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#intro {
+    padding-top: 50px;
+    height: 50%;
+    width: 100%;
+}
+
+#sections {
+    height: 42%;
+    width: 100%;
+    font-size: 0;
+}
+
+#burgerIcon {
+    display:inline;
+    margin-right: 1%;
+}
+
+#heyThere {
+    color: #6E6E6E;
+    font-size: 12vh;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.introParagraph {
+    color: #D6D6D6;
+    font-size: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 60%;
+}
+
+#education {
+    display: inline-block;
+    height: 100%;
+    margin-left:2%;
+    margin-right: 3%;
+    width: 30%;
+}
+
+#experience {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+}
+
+#personal {
+    display: inline-block;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 2%;
+    width: 30%;
+}
+
+.outerLinkContainer{
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.outerLinkContainer a {
+    text-decoration: none;
+}
+
+.innerLinkContainer{
+    border-radius: 10px;
+    height:100%;
+    transition: background-color 0.25s;
+}
+
+.innerLinkContainer p {
+    color: #393939;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.orangeIcon {
+    display: block;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    transition: opacity 0.25s;
+}
+
+.grayIcon {
+    display: none;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    transition: opacity 0.25s;
+    z-index: 97;
+}
+
+.innerLinkContainer:hover {
+    background-color: #EC7F37;
+}
+
+.innerLinkContainer:hover .grayIcon{
+    display:block;
+}
+
+.innerLinkContainer:hover .orangeIcon {
+    display:none;
+}
+
+
+
+

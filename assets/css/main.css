@@ -1,0 +1,158 @@
+/*
+CSS to be used across all of the pages
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:regular,black&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #393939;
+}
+
+#header {
+    position: fixed;
+    height: 8%;
+    padding: 0;
+    width: 100%;
+}
+
+#name {
+    color: #6E6E6E;
+    display: inline;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2vw;
+    font-weight: bolder;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+nav a {
+    color: #D6D6D6;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #EC7F37;
+}
+
+#menuToggle {
+    position:fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 98;
+    user-select: none;
+}
+
+#menuToggle input {
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 99;
+}
+
+#menuToggle span {
+    background-color: #FF5A09;
+    border-radius: 3px;
+    display: block;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 33px;
+    z-index:98;
+    transform-origin: 4px 0;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menu {
+    background-color: #4F4F4F;
+    border-bottom-left-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    list-style-type: none;
+    margin: -100px 0 0 100px;
+    padding-bottom: 25px;
+    padding-right: 75px;
+    padding-top: 60px;
+    position: absolute;
+    transform: none;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    width: 150px;
+}
+
+#menuToggle span:first-child
+{
+    transform-origin: 0 0;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+    transform-origin: 0 100%;
+}
+
+#menuToggle input:checked ~ #menu {
+    transform: translate(-100%, 0);
+}
+
+#menuToggle input:checked ~ span
+{
+    transform: rotate(45deg);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, 1px);
+}
+
+#menu li
+{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+
+
+/*
+This container was used to visualize div layouts
+ */
+/*#container {*/
+/*    background-color: blue;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+
+/*    position: fixed;*/
+/*    top: 5%;*/
+/*    bottom: 5%;*/
+/*    right: 15%;*/
+/*    left: 15%;*/
+
+/*}*/
+
+/*
+
+This is to vertically and horizontally center text within the container div
+
+#container p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+*/
